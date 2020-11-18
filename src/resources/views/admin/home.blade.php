@@ -10,7 +10,7 @@
 @section('content')
     <div class="card card-primary">
         <div class="card-header">
-            <h3 class="card-title">Larave Admin Project</h3>
+            <h3 class="card-title">管理画面TOP</h3>
         </div>
     </div>
 @stop
