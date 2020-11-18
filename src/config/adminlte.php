@@ -194,7 +194,7 @@ return [
 
     'login_url' => 'admin/login',
 
-    'register_url' => 'admin/register',
+    'register_url' => '',
 
     'password_reset_url' => 'admin/password/reset',
 
