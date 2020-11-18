@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   app:
@@ -42,7 +42,13 @@ services:
       TZ: Asia/Tokyo
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     volumes:
-    - ./docker/db/data:/var/lib/mysql
-    - ./docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./docker/db/data:/var/lib/mysql
+      - ./docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
     ports:
-    - ${DB_PORT}:3306
+      - ${DB_PORT}:3306
+
+  mail:
+    container_name: ${PROJECT_NAME}_develop_mail
+    image: mailhog/mailhog
+    ports:
+      - 8025:8025
