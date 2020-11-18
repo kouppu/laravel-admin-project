@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'ツイマジ | アカウント設定')
+@section('title', config('adminlte.title', '管理画面') . ' | アカウント設定')
 
 @section('content_header')
     <h1>アカウント設定</h1>

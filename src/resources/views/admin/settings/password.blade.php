@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'ツイマジ | パスワード設定')
+@section('title', config('adminlte.title', '管理画面') . ' | パスワードリセット')
 
 @section('content_header')
     <h1>パスワード設定</h1>

@@ -1,7 +1,6 @@
-<!-- adminlte::pageを継承 -->
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', config('adminlte.title', '管理画面') . ' | TOP')
 
 @section('content_header')
 
