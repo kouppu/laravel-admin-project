@@ -4,6 +4,6 @@
 ## Setup
 ---
 1. `docker-compose build`
-2. `d exec -it laravel_admin_project_develop_app bash`
+2. `docker exec -it laravel_admin_project_develop_app bash`
 3. `sh initial_deploy.sh`
 4. `php artisan command:createAdmin`
